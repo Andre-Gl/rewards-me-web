@@ -1,0 +1,22 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    {% if site.twitter.username %}
+      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    {% endif %}
+    {% if site.author.facebook %}
+      <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+    {% endif %}
+    {% if site.author.instagram %}
+      <li><a href="https://www.instagram.com/{{ site.author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+    {% endif %}
+    {% if site.author.vk %}
+      <li><a href="https://www.vk.com/{{ site.author.vk }}"><i class="fab fa-fw fa-vk" aria-hidden="true"></i> ВКонтакте</a></li>
+    {% endif %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>

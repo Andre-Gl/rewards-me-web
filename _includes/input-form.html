@@ -1,0 +1,43 @@
+<div class="user-data-input">
+  <form class="user-data-input-form form-inline" id="UserDataInputForm" action="/find/" method="post">
+    <div class="form-group">
+      <p>Enter your average monthly spending in the following categories:</p>
+    </div>
+    <div class="form-group">
+      <label for="restaurants">Restaurants</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="restaurants" name="restaurants" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="groceries">Groceries</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="groceries" name="groceries" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="airTravel">Air Travel</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="airTravel" name="airTravel" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="otherTravel">Other Travel</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="otherTravel" name="otherTravel" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="gas">Gas</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="gas" name="gas" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="amazon">Amazon</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="amazon" name="amazon" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <label for="misc">Other Spendings</label>
+      <input type="number" class="input-small" placeholder="$0.00" id="misc" name="misc" value="" required min="0" max="100000">
+    </div>
+    <div class="form-group">
+      <button class="btn btn--primary btn--large" type="submit">Submit</button>
+    </div>
+  </form>
+  <div class="form-result" id="UserDataInputFormResult">
+
+  </div>
+  <button class="btn btn--inverse btn--large" id="UserDataInputFormBack">Back</button>
+  <button class="btn btn--primary btn--large" id="UserDataInputFormSeeAll">See More Cards</button>
+</div>

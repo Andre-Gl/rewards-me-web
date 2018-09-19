@@ -1,0 +1,80 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$primary-color: #FFD700;
+$masthead-background-color: #222222;
+$masthead-link-color: #DDDDDD;
+$masthead-link-color-hover: #FFFFFF;
+$navicon-link-color-hover: $masthead-background-color;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/variables";
+
+.masthead, .greedy-nav, .greedy-nav .hidden-links {
+  background-color: $masthead-background-color;
+
+}
+
+.masthead {
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 0px 3px #000000;
+}
+
+.user-data-input {
+  .user-data-input-form .form-group {
+    margin: 0 auto;
+    padding: 4px;
+    max-width: 500px;
+    .input-small {
+      width: 180px;
+    }
+    label {
+      width: 180px;
+    }
+  }
+  .form-result {
+    ul {
+      list-style: none;
+      li {
+        border-right: 1px solid $lighter-gray;
+        padding: 5px;
+        &:hover {
+          box-shadow: 0px 0px 5px $gray;
+        }
+      }
+      .details {
+        padding: 0 10px;
+        width: 50%;
+        float: right;
+        small {
+          display: block;
+        }
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.hp-feature-row-icons {
+  transition: all 0.5s;
+  border: 1px solid $success-color;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  text-align: center;
+  color: $success-color;
+  box-shadow: 0px 0px 5px -1px $success-color;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: $success-color;
+  }
+}
