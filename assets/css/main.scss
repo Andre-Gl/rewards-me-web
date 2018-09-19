@@ -4,6 +4,7 @@
 
 @charset "utf-8";
 
+$white-color: #FFFFFF;
 $primary-color: #FFD700;
 $masthead-background-color: #222222;
 $masthead-link-color: #DDDDDD;
@@ -13,6 +14,19 @@ $navicon-link-color-hover: $masthead-background-color;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 @import "minimal-mistakes/variables";
+
+// White button
+.btn.btn--white {
+  @include yiq-contrasted($white-color);
+
+  &:visited {
+    @include yiq-contrasted($white-color);
+  }
+
+  &:hover {
+    @include yiq-contrasted(mix(#000, $white-color, 20%));
+  }
+}
 
 .masthead, .greedy-nav, .greedy-nav .hidden-links {
   background-color: $masthead-background-color;

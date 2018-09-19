@@ -85,7 +85,7 @@ $(document).ready(function() {
                 </span>
                 2 years
               </p>
-              <p>${ item.metadata.notes }</p>
+              <small>${ item.metadata.notes }</small>
             </li>
           `
       }).join(''),
