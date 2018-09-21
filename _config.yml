@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Rewards Me"
 title_separator          : "-"
 name                     : "Rewards Me"
-description              : "Website that will help you to find the most rewarding card for your spendings. Make your cretid card rewards work best for you!"
+description              : "This website provides the most pragmatic way to select a new credit card. Let’s find the most rewarding credit card based on your monthly spendings."
 logo                     : /assets/images/logo.png
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
